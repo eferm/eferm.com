@@ -1,0 +1,137 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	background: #303030;
+	height:100%;
+}
+
+#distance { 
+	width:1px;
+	height:50%;
+	margin-bottom:-316px; /* half of container's height minus height of banner*/
+	float:left;
+}
+
+#header {
+	background: url(header.png);
+	margin:0 auto;
+	position:relative; /* puts header in front of distance */
+	height:100px;
+	width:700px;
+	clear:left;
+	padding:0px;
+}
+
+#header a {
+	font-size: 80px;
+	line-height: 100px; /* for vertical centering */
+	letter-spacing: 1px;
+	word-spacing: 30px;
+	color: #979797;
+}
+
+#content {
+	margin:0 auto;
+	position:relative; /* puts content in front of header */
+	height:432px;
+	width:700px;
+	clear:left;
+	padding:0px;
+}
+
+#footer {
+	margin:0 auto;
+	margin-top: 20px;
+	position:relative; /* puts footer in front of content */
+	height:50px;
+	width:700px;
+	clear:left;
+	padding:0px;
+	text-align: center;
+}
+
+.cell {
+	float:left;
+	display: inline;
+	width: 175px;
+	height: 108px;
+}
+
+.cell a {
+	font-size: 26px;
+	line-height: 108px; /* for vertical centering */
+	color: #2D2D2D;
+	-webkit-text-stroke: 1px #242424; /* webkit only */
+}
+
+.clear {
+	clear:both;
+	height: 0px;
+}
+
+a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-family: 'Georgia';
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* text within background-images used since text-shadow is not very well supported */
+
+a.facebook {
+	text-shadow: 0px 2px 3px #278ad6;
+	background: url(facebook.png) 0 0;
+}
+
+a.ctk {
+	text-shadow: 0px 2px 3px #d9b341;
+	background: url(ctk.png) 0 0;
+}
+
+a.travel {
+	text-shadow: 0px 2px 3px #e67740;
+	background: url(travel.png) 0 0;
+}
+
+a.reddit {
+	text-shadow: 0px 2px 3px #3b762a;
+	background: url(reddit.png) 0 0;
+}
+
+a.twitter {
+	text-shadow: 0px 2px 3px #b3245d;
+	background: url(twitter.png) 0 0;
+}
+
+a.lastfm {
+	text-shadow: 0px 2px 3px #d94141;
+	background: url(lastfm.png) 0 0;
+}
+
+a.delicious {
+	text-shadow: 0px 2px 3px #15828b;
+	background: url(delicious.png) 0 0;
+}
+
+a.cv {
+	text-shadow: 0px 2px 3px #7f239e;
+	background: url(cv.png) 0 0;
+}
+
+a:hover {
+	background-position: -175px; /* highlighting */
+}
+
+a:active, a:focus {
+	outline: 0;
+}
+
+img {
+	border: 0px;
+}
