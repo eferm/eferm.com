@@ -1,28 +1,28 @@
 * {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 html, body {
 	background: #303030;
-	height:100%;
+	height: 100%;
 }
 
 #distance { 
-	width:1px;
-	height:50%;
-	margin-bottom:-316px; /* half of container's height minus height of banner*/
-	float:left;
+	width: 1px;
+	height: 50%;
+	margin-bottom: -316px; /* half of container's height minus height of banner*/
+	float: left;
 }
 
 #header {
 	background: url(header.png);
-	margin:0 auto;
-	position:relative; /* puts header in front of distance */
-	height:100px;
-	width:700px;
-	clear:left;
-	padding:0px;
+	margin: 0 auto;
+	position: relative; /* puts header in front of distance */
+	height: 100px;
+	width: 700px;
+	clear: left;
+	padding: 0px;
 }
 
 #header a {
@@ -56,6 +56,7 @@ html, body {
 .cell {
 	float:left;
 	display: inline;
+	overflow: hidden;
 	width: 175px;
 	height: 108px;
 }
@@ -70,6 +71,11 @@ html, body {
 .clear {
 	clear:both;
 	height: 0px;
+}
+
+.hide {
+	position: fixed;
+	top: 9999px; /* flush text out of sight */
 }
 
 a {
@@ -125,7 +131,7 @@ a.cv {
 }
 
 a:hover {
-	background-position: -175px; /* highlighting */
+	background-position: -175px; /* for highlighting */
 }
 
 a:active, a:focus {
