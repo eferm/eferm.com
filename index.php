@@ -28,7 +28,6 @@
 						echo '<em>'.$date[1].' '.$date[0].', '.$date[3].':'.$date[4].'</em></p>';
 					}
 				?>
-				<div class="sidefoot_left"></div>
 			</div>
 			<div id="right">
 				<?php
@@ -55,7 +54,6 @@
 						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
 					}
 				?>
-				<div class="sidefoot_right"></div>
 			</div>
 			<div id="content">
 				<div class="cell"></div>
