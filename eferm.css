@@ -45,21 +45,27 @@ html, body {
 
 #left {
 	width: 140px;
-	float: left;
+	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
+	top: 0px;
+	overflow: hidden;
 	margin-right: 20px;
+	float: left;
 	text-align: right;
 }
 
 #right {
 	width: 140px;
-	float: right;
+	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
+	top: 0px;
+	overflow: hidden;
 	margin-left: 20px;
+	float: right;
 	text-align: left;
 }
 
 #right a, #right a:hover, #right a:focus, #right a:active, #right a:visited {
-	font-family: 'HelveticaNeue-Light', sans-serif;
-	color: #191919;
+	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
+	color: #161616;
 	font-weight: normal;
 	text-decoration: none;
 	display: inline;
@@ -127,11 +133,12 @@ html, body {
 }
 
 p {
-	font-family: 'HelveticaNeue-Light', sans-serif;
+	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
 	font-size: 11px;
+	line-height: 11px;
 	font-weight: normal;
 	text-decoration: none;
-	color: #222222;
+	color: #1f1f1f;
 	margin-bottom: 11px;
 }
 

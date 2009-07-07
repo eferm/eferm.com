@@ -16,16 +16,19 @@
 		<div id="container">
 			<div id="left">
 				<?php
-					$url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=emore&limit=25&api_key=8502f1c75bbc60c7d3599c90c1f9cab8";
-					
+					$url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=emore&limit=10&api_key=8502f1c75bbc60c7d3599c90c1f9cab8";
 					$xml = simplexml_load_file("$url");
 					foreach ($xml->recenttracks->track as $track) {
+						echo "\n\t\t\t\t";
 						echo '<p>'.$track->name;
 						echo '<br />';
+						echo "\n\t\t\t\t";
 						echo $track->artist;
 						echo '<br />';
+						echo "\n\t\t\t\t";
 						$date = $date = preg_split("/[\s,:]+/",$track->date);
 						echo '<em>'.$date[1].' '.$date[0].', '.$date[3].':'.$date[4].'</em></p>';
+						echo "\n";
 					}
 				?>
 			</div>
@@ -46,12 +49,15 @@
 					$xml = $twitter->getUserTimeline();
 					$twitter_status = new SimpleXMLElement($xml);
 					foreach ($twitter_status->status as $status) {
+						echo "\n\t\t\t\t";
 						echo '<p>';
 						$tweet = toLink($status->text);
 						echo $tweet;
 						echo '<br />';
+						echo "\n\t\t\t\t";
 						$date = preg_split("/[\s,:]+/",$status->created_at);
 						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
+						echo "\n";
 					}
 				?>
 			</div>
