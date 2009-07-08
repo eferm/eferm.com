@@ -16,7 +16,10 @@
 		<div id="container">
 			<div id="left">
 				<?php
-					$url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=emore&limit=10&api_key=8502f1c75bbc60c7d3599c90c1f9cab8";
+					$user = "emore";
+					$limit = 10;
+					$api_key = "APIKEY";
+					$url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=".$user."&limit=".$limit."&api_key=".$api_key;
 					$xml = simplexml_load_file("$url");
 					foreach ($xml->recenttracks->track as $track) {
 						echo "\n\t\t\t\t";
@@ -28,8 +31,8 @@
 						echo "\n\t\t\t\t";
 						$date = $date = preg_split("/[\s,:]+/",$track->date);
 						echo '<em>'.$date[1].' '.$date[0].', '.$date[3].':'.$date[4].'</em></p>';
-						echo "\n";
 					}
+					echo "\n";
 				?>
 			</div>
 			<div id="right">
@@ -39,8 +42,8 @@
 					include('search.php');
 
 					// your twitter username and password
-					$username = "ataraxi";
-					$password = "losenord45";
+					$username = "USERNAME";
+					$password = "PASSWORD";
 
 					// initialize the twitter class
 					$twitter = new Twitter($username, $password);
@@ -48,7 +51,19 @@
 					// fetch user's timeline in xml format
 					$xml = $twitter->getUserTimeline();
 					$twitter_status = new SimpleXMLElement($xml);
-					foreach ($twitter_status->status as $status) {
+					for ($i = 0; $i < 10; $i++) {
+						if ($i == 0) {echo "\t\t\t\t";} else {echo "\n\t\t\t\t";}
+						$status = $twitter_status->status;
+						echo '<p>';
+						$tweet = toLink($status->text);
+						echo $tweet;
+						echo '<br />';
+						echo "\n\t\t\t\t";
+						$date = preg_split("/[\s,:]+/",$status->created_at);
+						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
+					}
+					echo "\n";
+					/*foreach ($twitter_status->status as $status) {
 						echo "\n\t\t\t\t";
 						echo '<p>';
 						$tweet = toLink($status->text);
@@ -58,7 +73,7 @@
 						$date = preg_split("/[\s,:]+/",$status->created_at);
 						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
 						echo "\n";
-					}
+					}*/
 				?>
 			</div>
 			<div id="content">
