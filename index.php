@@ -51,29 +51,21 @@
 					// fetch user's timeline in xml format
 					$xml = $twitter->getUserTimeline();
 					$twitter_status = new SimpleXMLElement($xml);
-					for ($i = 0; $i < 10; $i++) {
-						if ($i == 0) {echo "\t\t\t\t";} else {echo "\n\t\t\t\t";}
-						$status = $twitter_status->status;
-						echo '<p>';
-						$tweet = toLink($status->text);
-						echo $tweet;
-						echo '<br />';
-						echo "\n\t\t\t\t";
-						$date = preg_split("/[\s,:]+/",$status->created_at);
-						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
+					$i = 0;
+					foreach ($twitter_status->status as $status) {
+						if ($i < 10) {
+							if ($i == 0) {echo "\t\t\t\t";} else {echo "\n\t\t\t\t";}
+							echo '<p>';
+							$tweet = toLink($status->text);
+							echo $tweet;
+							echo '<br />';
+							echo "\n\t\t\t\t";
+							$date = preg_split("/[\s,:]+/",$status->created_at);
+							echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
+							$i++;
+						}
 					}
 					echo "\n";
-					/*foreach ($twitter_status->status as $status) {
-						echo "\n\t\t\t\t";
-						echo '<p>';
-						$tweet = toLink($status->text);
-						echo $tweet;
-						echo '<br />';
-						echo "\n\t\t\t\t";
-						$date = preg_split("/[\s,:]+/",$status->created_at);
-						echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
-						echo "\n";
-					}*/
 				?>
 			</div>
 			<div id="content">
