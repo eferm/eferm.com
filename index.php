@@ -14,7 +14,7 @@
 		<div id="header"><a href="mailto:emanuel@eferm.com">
 			<span class="hide">Emanuel Ferm</span></a></div>
 		<div id="container">
-			<div id="left">
+			<div id="left"><!--googleoff: snippet-->
 				<?php
 					$user = "emore";
 					$limit = 10;
@@ -34,8 +34,8 @@
 					}
 					echo "\n";
 				?>
-			</div>
-			<div id="right">
+			</div><!--googleon: snippet-->
+			<div id="right"><!--googleoff: snippet-->
 				<?php
 					// require the twitter library
 					require "twitterlibphp/twitter.lib.php";
@@ -67,7 +67,7 @@
 					}
 					echo "\n";
 				?>
-			</div>
+			</div><!--googleon: snippet-->
 			<div id="content">
 				<div class="cell"></div>
 				<div class="cell"><a class="facebook" href="http://www.facebook.com/emanuel.ferm">
