@@ -96,7 +96,7 @@
 				<div class="cell"><a class="delicious" href="http://delicious.com/Emore/">
 					<span class="hide">Sites I like are on Delicious.</span></a></div>
 				<div class="cell"></div>
-				<div class="cell"><a class="cv" href="cv.txt">
+				<div class="cell"><a class="cv" href="files/cv.txt">
 					<span class="hide">I have a CV.</span></a></div>
 				<div class="cell"></div>
 				<div class="clear"></div>
