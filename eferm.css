@@ -68,7 +68,7 @@ html, body {
 #right a, #right a:hover, #right a:focus, #right a:active, #right a:visited {
 	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
 	color: #161616;
-	font-weight: normal;
+	font-weight: lighter;
 	text-decoration: none;
 	display: inline;
 }
@@ -106,32 +106,14 @@ html, body {
 }
 
 .clear {
-	clear:both;
+	clear: both;
 	height: 0px;
-}
-
-.sidefoot_left {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	z-index: 999;
-	width: 150px;
-	height: 50px;
-	background: transparent no-repeat url(img/sidefoot.png) 0 0;
-}
-
-.sidefoot_right {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	z-index: 999;
-	width: 150px;
-	height: 50px;
-	background: transparent no-repeat url(img/sidefoot.png) 0 0;
+	visibility: hidden;
+	display: none;
 }
 
 .hide {
-	position: fixed;
+	position: absolute;
 	top: 9999px; /* flush text out of sight */
 }
 
@@ -139,7 +121,7 @@ p {
 	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
 	font-size: 11px;
 	line-height: 11px;
-	font-weight: normal;
+	font-weight: lighter;
 	text-decoration: none;
 	color: #1f1f1f;
 	margin-bottom: 11px;
@@ -198,7 +180,7 @@ a.cv {
 }
 
 a:hover {
-	background-position: -175px; /* for highlighting */
+	background-position: -175px 0px; /* for highlighting */
 }
 
 a:active, a:focus {
