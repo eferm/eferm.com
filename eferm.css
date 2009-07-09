@@ -47,9 +47,10 @@ html, body {
 	width: 140px;
 	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
 	top: 0px;
+	left: 0px;
 	overflow: hidden;
 	margin-right: 20px;
-	float: left;
+	position: absolute;
 	text-align: right;
 }
 
@@ -57,9 +58,10 @@ html, body {
 	width: 140px;
 	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
 	top: 0px;
+	right: 0px;
 	overflow: hidden;
 	margin-left: 20px;
-	float: right;
+	position: absolute;
 	text-align: left;
 }
 
@@ -73,7 +75,8 @@ html, body {
 
 #content {
 	width: 700px;
-	float: left;
+	margin-left: 160px;
+	margin-right: 160px;
 }
 
 #footer {
