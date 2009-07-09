@@ -23,6 +23,7 @@ html, body {
 	width: 700px;
 	clear: left;
 	padding: 0px;
+	overflow: hidden;
 }
 
 #header a {
