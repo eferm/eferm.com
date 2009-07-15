@@ -15,35 +15,35 @@
 			<span class="hide">Emanuel Ferm</span></a></div>
 		<div id="container">
 			<div id="content">
-				<div class="cell"></div>
+				<div class="cell"><span class="left"></span></div>
+				<div class="cell"><a class="blog" href="http://eferm.com/blog/">
+					<span class="hide">I have a blog.</span></a></div>
+				<div class="cell"><span class="right"></span></div>
+				<div class="cell"><a class="twitter" href="http://twitter.com/ataraxi">
+					<span class="hide">I use Twitter.</span></a></div>
+				<div class="clear"></div>
+
+				<div class="cell"><a class="ctk" href="http://www.ctk.se/">
+					<span class="hide">I'm vice CEO of CTK.</span></a></div>
+				<div class="cell"><span class="bottom"></span></div>
 				<div class="cell"><a class="facebook" href="http://www.facebook.com/emanuel.ferm">
 					<span class="hide">I'm on Facebook.</span></a></div>
 				<div class="cell"></div>
-				<div class="cell"><a class="ctk" href="http://www.ctk.se/">
-					<span class="hide">I'm vice CEO of CTK.</span></a></div>
 				<div class="clear"></div>
-
-				<div class="cell"><a class="travel" href="http://exploringthailand.wordpress.com/">
-					<span class="hide">I love to Travel.</span></a></div>
-				<div class="cell"></div>
-				<div class="cell"><a class="reddit" href="http://www.reddit.com/user/Emore/liked/">
-					<span class="hide">I read stuff via Reddit.</span></a></div>
-				<div class="cell"></div>
-				<div class="clear"></div>
-
-				<div class="cell"></div>
-				<div class="cell"><a class="twitter" href="http://twitter.com/ataraxi">
-					<span class="hide">I regularly use Twitter.</span></a></div>
-				<div class="cell"></div>
-				<div class="cell"><a class="lastfm" href="http://www.last.fm/user/Emore">
-					<span class="hide">The music I love is on Last.fm.</span></a></div>
-				<div class="clear"></div>
-
-				<div class="cell"><a class="delicious" href="http://delicious.com/Emore/">
-					<span class="hide">Sites I like are on Delicious.</span></a></div>
+				
 				<div class="cell"></div>
 				<div class="cell"><a class="cv" href="files/ferm_emanuel-cv.pdf">
 					<span class="hide">I have a CV.</span></a></div>
+				<div class="cell"></div>
+				<div class="cell"><a class="lastfm" href="http://www.last.fm/user/Emore">
+					<span class="hide">Music I listen to is on Last.fm.</span></a></div>
+				<div class="clear"></div>
+				
+				<div class="cell"><a class="reddit" href="http://www.reddit.com/user/Emore/liked/">
+					<span class="hide">I read stuff on Reddit.</span></a></div>
+				<div class="cell"></div>
+				<div class="cell"><a class="travel" href="http://exploringthailand.wordpress.com/">
+					<span class="hide">I love to Travel.</span></a></div>
 				<div class="cell"></div>
 				<div class="clear"></div>
 			</div>

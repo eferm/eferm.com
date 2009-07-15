@@ -16,7 +16,7 @@ html, body {
 }
 
 #header {
-	background: url(img/header.png);
+	background: url(img/header.png) 0 0;
 	margin: 0 auto;
 	position: relative; /* puts header in front of distance */
 	height: 100px;
@@ -170,9 +170,9 @@ a.lastfm {
 	background: url(img/lastfm.png) 0 0;
 }
 
-a.delicious {
+a.blog {
 	text-shadow: 0px 2px 3px #15828b;
-	background: url(img/delicious.png) 0 0;
+	background: url(img/blog.png) 0 0;
 }
 
 a.cv {
@@ -190,4 +190,25 @@ a:active, a:focus {
 
 img {
 	border: 0px;
+}
+
+.left {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/left.png) 0 0;
+}
+
+.right {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/right.png) 0 0;
+}
+
+.bottom {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url(img/bottom.png) 0 0;
 }
