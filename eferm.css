@@ -22,16 +22,7 @@ html, body {
 	height: 100px;
 	width: 700px;
 	clear: left;
-	padding: 0px;
 	overflow: hidden;
-}
-
-#header a {
-	font-size: 80px;
-	line-height: 100px; /* for vertical centering */
-	letter-spacing: 1px;
-	word-spacing: 30px;
-	color: #979797;
 }
 
 #container {
@@ -40,8 +31,13 @@ html, body {
 	height: 432px;
 	width: 1020px;
 	clear: left;
-	padding: 0px;
 	overflow: hidden;
+}
+
+#content {
+	width: 700px;
+	margin-left: 160px;
+	margin-right: 160px;
 }
 
 #left {
@@ -66,28 +62,13 @@ html, body {
 	text-align: left;
 }
 
-#right a, #right a:hover, #right a:focus, #right a:active, #right a:visited {
-	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
-	color: #161616;
-	font-weight: lighter;
-	text-decoration: none;
-	display: inline;
-}
-
-#content {
-	width: 700px;
-	margin-left: 160px;
-	margin-right: 160px;
-}
-
 #footer {
 	margin: 0 auto;
 	margin-top: 20px;
 	position: relative; /* puts footer in front of content */
 	height: 50px;
 	width: 700px;
-	clear:left;
-	padding:0px;
+	clear: left;
 	text-align: center;
 }
 
@@ -97,99 +78,6 @@ html, body {
 	overflow: hidden;
 	width: 175px;
 	height: 108px;
-}
-
-.cell a {
-	font-size: 26px;
-	line-height: 108px; /* for vertical centering */
-	color: #2D2D2D;
-	-webkit-text-stroke: 1px #242424; /* webkit only */
-}
-
-.clear {
-	clear: both;
-	height: 0px;
-	visibility: hidden;
-	display: none;
-}
-
-.hide {
-	position: absolute;
-	top: 9999px; /* flush text out of sight */
-}
-
-p {
-	font-family: 'HelveticaNeue-Light','Arial',sans-serif;
-	font-size: 11px;
-	line-height: 11px;
-	font-weight: lighter;
-	text-decoration: none;
-	color: #1b1b1b;
-	margin-bottom: 11px;
-}
-
-a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	font-family: 'Georgia';
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-}
-
-/* text within background-images used since text-shadow is not very well supported */
-
-a.facebook {
-	text-shadow: 0px 2px 3px #278ad6;
-	background: url(img/facebook.png) 0 0;
-}
-
-a.ctk {
-	text-shadow: 0px 2px 3px #d9b341;
-	background: url(img/ctk.png) 0 0;
-}
-
-a.travel {
-	text-shadow: 0px 2px 3px #e67740;
-	background: url(img/travel.png) 0 0;
-}
-
-a.reddit {
-	text-shadow: 0px 2px 3px #3b762a;
-	background: url(img/reddit.png) 0 0;
-}
-
-a.twitter {
-	text-shadow: 0px 2px 3px #b3245d;
-	background: url(img/twitter.png) 0 0;
-}
-
-a.lastfm {
-	text-shadow: 0px 2px 3px #d94141;
-	background: url(img/lastfm.png) 0 0;
-}
-
-a.blog {
-	text-shadow: 0px 2px 3px #15828b;
-	background: url(img/blog.png) 0 0;
-}
-
-a.cv {
-	text-shadow: 0px 2px 3px #7f239e;
-	background: url(img/cv.png) 0 0;
-}
-
-a:hover {
-	background-position: -175px 0px; /* for highlighting */
-}
-
-a:active, a:focus {
-	outline: 0;
-}
-
-img {
-	border: 0px;
 }
 
 .left {
@@ -212,3 +100,58 @@ img {
 	width: 100%;
 	background: url(img/bottom.png) 0 0;
 }
+
+.clear {
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+	display: none;
+}
+
+.hide {
+	position: absolute;
+	top: 9999px; /* flush text out of sight */
+}
+
+a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#left p, #right p {
+	font: lighter 11px/11px 'HelveticaNeue-Light','Arial',sans-serif;
+	text-decoration: none;
+	color: #1b1b1b;
+	margin-bottom: 11px;
+}
+
+#right a, #right a:hover, #right a:focus, #right a:active, #right a:visited,
+#left a, #left a:hover, #left a:focus, #left a:active, #left a:visited {
+	font: lighter 11px/11px 'HelveticaNeue-Light','Arial',sans-serif;
+	text-decoration: none;
+	color: #161616;
+	display: inline;
+}
+
+a:active, a:focus {outline: 0;}
+
+img {border: 0px;}
+
+a.facebook {background: url(img/facebook.png) 0 0;}
+
+a.ctk {background: url(img/ctk.png) 0 0;}
+
+a.travel {background: url(img/travel.png) 0 0;}
+
+a.reddit {background: url(img/reddit.png) 0 0;}
+
+a.twitter {background: url(img/twitter.png) 0 0;}
+
+a.lastfm {background: url(img/lastfm.png) 0 0;}
+
+a.blog {background: url(img/blog.png) 0 0;}
+
+a.cv {background: url(img/cv.png) 0 0;}
+
+a:hover {background-position: -175px 0px;} /* for highlighting */
