@@ -24,7 +24,7 @@
 				<div class="clear"></div>
 
 				<div class="cell"><a class="ctk" href="http://www.ctk.se/">
-					<span class="hide">I'm vice CEO of CTK.</span></a></div>
+					<span class="hide">I'm vice CEO of Chalmers Teknologkonsulter AB.</span></a></div>
 				<div class="cell"><span class="bottom"></span></div>
 				<div class="cell"><a class="facebook" href="http://www.facebook.com/emanuel.ferm">
 					<span class="hide">I'm on Facebook.</span></a></div>
