@@ -22,10 +22,13 @@ html, body {
 	overflow: hidden;
 }
 
+#header, #content, #footer {
+	width: 700px;
+}
+
 #header {
 	background: url(img/header.png) 0 0;
 	height: 100px;
-	width: 700px;
 }
 
 #container {
@@ -36,11 +39,9 @@ html, body {
 #footer {
 	margin-top: 20px;
 	height: 50px;
-	width: 700px;
 }
 
 #content {
-	width: 700px;
 	margin-left: 160px;
 	margin-right: 160px;
 }
@@ -80,23 +81,17 @@ html, body {
 	display: none;
 }
 
-.left, .right, .bottom {
+.left, .right, .top, .bottom {
 	display: block;
 	height: 100%;
 	width: 100%;
+	background: url(img/highlight.png) no-repeat;
 }
 
-.left {
-	background: url(img/left.png) 0 0;
-}
-
-.right {
-	background: url(img/right.png) 0 0;
-}
-
-.bottom {
-	background: url(img/bottom.png) 0 0;
-}
+.left {background-position: 168px -7px;}
+.right {background-position: -182px -7px;}
+.top {background-position: 168px 93px;}
+.bottom {background-position: -7px -115px;}
 
 .hide {
 	position: absolute;
@@ -108,6 +103,9 @@ a {
 	height: 100%;
 	width: 100%;
 }
+
+a:active, a:focus {outline: 0;}
+img {border: 0px;}
 
 #left p, #right p, #right a, #right a:hover, #right a:focus, #right a:active, #right a:visited,
 #left a, #left a:hover, #left a:focus, #left a:active, #left a:visited {
@@ -126,46 +124,28 @@ a {
 	display: inline;
 }
 
-a:active, a:focus {
-	outline: 0;
-}
+.cell a {background: url(img/buttons.png) 0px;}
 
-img {
-	border: 0px;
-}
+a.blog {background-position: left 0px;}
+a.blog:hover {background-position: right 0px;}
 
-a.facebook {
-	background: url(img/facebook.png) 0 0;
-}
+a.twitter {background-position: left -108px;}
+a.twitter:hover {background-position: right -108px;}
 
-a.ctk {
-	background: url(img/ctk.png) 0 0;
-}
+a.ctk {background-position: left -216px;}
+a.ctk:hover {background-position: right -216px;}
 
-a.travel {
-	background: url(img/travel.png) 0 0;
-}
+a.facebook {background-position: left -324px;}
+a.facebook:hover {background-position: right -324px;}
 
-a.reddit {
-	background: url(img/reddit.png) 0 0;
-}
+a.cv {background-position: left -432px;}
+a.cv:hover {background-position: right -432px;}
 
-a.twitter {
-	background: url(img/twitter.png) 0 0;
-}
+a.lastfm {background-position: left -540px;}
+a.lastfm:hover {background-position: right -540px;}
 
-a.lastfm {
-	background: url(img/lastfm.png) 0 0;
-}
+a.reddit {background-position: left -648px;}
+a.reddit:hover {background-position: right -648px;}
 
-a.blog {
-	background: url(img/blog.png) 0 0;
-}
-
-a.cv {
-	background: url(img/cv.png) 0 0;
-}
-
-a:hover {
-	background-position: -175px 0px;
-}
+a.travel {background-position: left -756px;}
+a.travel:hover {background-position: right -756px;}

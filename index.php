@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div id="distance"></div>
-		<div id="header">
+		<div id="header"><span class="top"></span>
 			<script type="text/javascript">
 				document.write("<n uers=\"znvygb:rznahry@rsrez.pbz\">".replace(/[a-zA-Z]/g, 
 				function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
