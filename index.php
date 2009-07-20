@@ -11,8 +11,11 @@
 	</head>
 	<body>
 		<div id="distance"></div>
-		<div id="header"><a href="mailto:emanuel@eferm.com">
-			<span class="hide">Emanuel Ferm</span></a></div>
+		<div id="header">
+			<script type="text/javascript">
+				document.write("<n uers=\"znvygb:rznahry@rsrez.pbz\">".replace(/[a-zA-Z]/g, 
+				function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+			</script></a></div>
 		<div id="container">
 			<div id="content">
 				<div class="cell"><span class="left"></span></div>
