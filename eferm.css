@@ -4,7 +4,7 @@
 }
 
 html, body {
-	background: url(img/bg.png);
+	background: #303030;
 	height: 100%;
 }
 
@@ -15,23 +15,28 @@ html, body {
 	float: left;
 }
 
-#header {
-	background: url(img/header.png) 0 0;
+#header, #container, #footer {
 	margin: 0 auto;
-	position: relative; /* puts header in front of distance */
-	height: 100px;
-	width: 700px;
+	position: relative;
 	clear: left;
 	overflow: hidden;
 }
 
+#header {
+	background: url(img/header.png) 0 0;
+	height: 100px;
+	width: 700px;
+}
+
 #container {
-	margin: 0 auto;
-	position: relative; /* puts container in front of header */
 	height: 432px;
 	width: 1020px;
-	clear: left;
-	overflow: hidden;
+}
+
+#footer {
+	margin-top: 20px;
+	height: 50px;
+	width: 700px;
 }
 
 #content {
@@ -40,65 +45,32 @@ html, body {
 	margin-right: 160px;
 }
 
-#left {
+#left, #right {
 	width: 140px;
-	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
+	height: 429px;
 	top: 0px;
-	left: 0px;
 	overflow: hidden;
-	margin-right: 20px;
 	position: absolute;
+}
+
+#left {
+	left: 0px;
+	margin-right: 20px;
 	text-align: right;
 }
 
 #right {
-	width: 140px;
-	height: 429px; /* multiple of 11 - the font-size/line-height/line-spacing */
-	top: 0px;
 	right: 0px;
-	overflow: hidden;
 	margin-left: 20px;
-	position: absolute;
 	text-align: left;
 }
 
-#footer {
-	margin: 0 auto;
-	margin-top: 20px;
-	position: relative; /* puts footer in front of content */
-	height: 50px;
-	width: 700px;
-	clear: left;
-	text-align: center;
-}
-
 .cell {
-	float:left;
+	float: left;
 	display: inline;
 	overflow: hidden;
 	width: 175px;
 	height: 108px;
-}
-
-.left {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background: url(img/left.png) 0 0;
-}
-
-.right {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background: url(img/right.png) 0 0;
-}
-
-.bottom {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background: url(img/bottom.png) 0 0;
 }
 
 .clear {
@@ -106,6 +78,24 @@ html, body {
 	height: 0px;
 	visibility: hidden;
 	display: none;
+}
+
+.left, .right, .bottom {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.left {
+	background: url(img/left.png) 0 0;
+}
+
+.right {
+	background: url(img/right.png) 0 0;
+}
+
+.bottom {
+	background: url(img/bottom.png) 0 0;
 }
 
 .hide {
@@ -119,39 +109,63 @@ a {
 	width: 100%;
 }
 
-#left p, #right p {
+#left p, #right p, #right a, #right a:hover, #right a:focus, #right a:active, #right a:visited,
+#left a, #left a:hover, #left a:focus, #left a:active, #left a:visited {
 	font: lighter 11px/11px 'HelveticaNeue-Light','Arial',sans-serif;
 	text-decoration: none;
+}
+
+#left p, #right p {
 	color: #101010;
 	margin-bottom: 11px;
 }
 
 #right a, #right a:hover, #right a:focus, #right a:active, #right a:visited,
 #left a, #left a:hover, #left a:focus, #left a:active, #left a:visited {
-	font: lighter 11px/11px 'HelveticaNeue-Light','Arial',sans-serif;
-	text-decoration: none;
 	color: #000000;
 	display: inline;
 }
 
-a:active, a:focus {outline: 0;}
+a:active, a:focus {
+	outline: 0;
+}
 
-img {border: 0px;}
+img {
+	border: 0px;
+}
 
-a.facebook {background: url(img/facebook.png) 0 0;}
+a.facebook {
+	background: url(img/facebook.png) 0 0;
+}
 
-a.ctk {background: url(img/ctk.png) 0 0;}
+a.ctk {
+	background: url(img/ctk.png) 0 0;
+}
 
-a.travel {background: url(img/travel.png) 0 0;}
+a.travel {
+	background: url(img/travel.png) 0 0;
+}
 
-a.reddit {background: url(img/reddit.png) 0 0;}
+a.reddit {
+	background: url(img/reddit.png) 0 0;
+}
 
-a.twitter {background: url(img/twitter.png) 0 0;}
+a.twitter {
+	background: url(img/twitter.png) 0 0;
+}
 
-a.lastfm {background: url(img/lastfm.png) 0 0;}
+a.lastfm {
+	background: url(img/lastfm.png) 0 0;
+}
 
-a.blog {background: url(img/blog.png) 0 0;}
+a.blog {
+	background: url(img/blog.png) 0 0;
+}
 
-a.cv {background: url(img/cv.png) 0 0;}
+a.cv {
+	background: url(img/cv.png) 0 0;
+}
 
-a:hover {background-position: -175px 0px;} /* for highlighting */
+a:hover {
+	background-position: -175px 0px;
+}
