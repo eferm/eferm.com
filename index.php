@@ -13,9 +13,9 @@
 		<div id="distance"></div>
 		<div id="header"><span class="top"></span>
 			<script type="text/javascript">
-				document.write("<n pynff=\"znvynern\" uers=\"znvygb:rznahry@rsrez.pbz\">".replace(/[a-zA-Z]/g,
-					function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
-			</script></a></div>
+				/* <![CDATA[ */ document.write("<n pynff=\"znvynern\" uers=\"znvygb:rznahry@rsrez.pbz\"></n>".replace(/[a-zA-Z]/g,
+					function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);})); /* ]]> */
+			</script></div>
 		<div id="container">
 			<div id="content">
 				<div class="cell"><span class="left"></span></div>
