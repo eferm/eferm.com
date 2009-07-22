@@ -6,15 +6,15 @@
 		<meta name="verify-v1" content="I+T8GpAAGkUkrGecM4cvTOHQ18/nUsGMm8v6qAtH5BI=" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link type="text/css" href="eferm.css" rel="stylesheet" media="screen" />
-		<title>Emanuel Ferm - Traces on the web</title>
+		<title>Emanuel Ferm</title>
 		<meta name="description" content="I'm Emanuel Ferm, and this is my life on the web." />
 	</head>
 	<body>
 		<div id="distance"></div>
 		<div id="header"><span class="top"></span>
 			<script type="text/javascript">
-				document.write("<n uers=\"znvygb:rznahry@rsrez.pbz\">".replace(/[a-zA-Z]/g, 
-				function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+				document.write("<n pynff=\"znvynern\" uers=\"znvygb:rznahry@rsrez.pbz\">".replace(/[a-zA-Z]/g,
+					function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
 			</script></a></div>
 		<div id="container">
 			<div id="content">
@@ -48,7 +48,7 @@
 				<div class="cell"><a class="travel" href="http://exploringthailand.wordpress.com/">
 					<span class="hide">I love to Travel.</span></a></div>
 				<div class="cell"></div>
-				<div class="clear"></div>
+				<div class="clear"></div>¨
 			</div>
 			<div id="left"><!--googleoff: snippet-->
 				<?php

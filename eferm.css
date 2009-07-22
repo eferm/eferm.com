@@ -24,15 +24,17 @@ html, body {
 
 #header, #content, #footer {
 	width: 700px;
+	padding-left: 160px;
+	padding-right: 160px;
 }
 
 #header {
-	background: url(img/header.png) 0 0;
+	background: url(img/header.png) no-repeat center 0;
 	height: 100px;
 }
 
 #container {
-	height: 432px;
+	height: 432px; /* 108 * 4 */
 	width: 1020px;
 }
 
@@ -41,14 +43,9 @@ html, body {
 	height: 50px;
 }
 
-#content {
-	margin-left: 160px;
-	margin-right: 160px;
-}
-
 #left, #right {
 	width: 140px;
-	height: 429px;
+	height: 429px; /* 429 % 11 = 0 */
 	top: 0px;
 	overflow: hidden;
 	position: absolute;
@@ -82,20 +79,28 @@ html, body {
 }
 
 .left, .right, .top, .bottom {
-	display: block;
-	height: 100%;
-	width: 100%;
+	position: absolute;
+	height: 108px;
+	width: 175px;
+	z-index: 1;
 	background: url(img/highlight.png) no-repeat;
 }
 
 .left {background-position: 168px -7px;}
 .right {background-position: -182px -7px;}
-.top {background-position: 168px 93px;}
+.top {height: 100px; width: 700px; background-position: 168px 93px;}
 .bottom {background-position: -7px -115px;}
 
 .hide {
 	position: absolute;
 	top: 9999px; /* flush text out of sight */
+}
+
+.mailarea {
+	position: absolute;
+	width: 700px;
+	height: 100px;
+	z-index: 2;
 }
 
 a {
