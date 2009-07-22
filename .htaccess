@@ -1,0 +1,6 @@
+RewriteEngine on
+
+# If not *exactly* the canonical domain or blank,
+# externally redirect to the canonical domain
+RewriteCond %{HTTP_HOST} !^(eferm\.com)?$
+RewriteRule (.*) http://eferm.com/$1 [R=301,L]
