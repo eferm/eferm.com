@@ -76,30 +76,33 @@
 					// require the twitter library
 					require "twitterlibphp/twitter.lib.php";
 					include('search.php');
+					try {
+						// your twitter username and password
+						$username = "USERNAME";
+						$password = "PASSWORD";
 
-					// your twitter username and password
-					$username = "USERNAME";
-					$password = "PASSWORD";
+						// initialize the twitter class
+						$twitter = new Twitter($username, $password);
 
-					// initialize the twitter class
-					$twitter = new Twitter($username, $password);
-
-					// fetch user's timeline in xml format
-					$xml = $twitter->getUserTimeline();
-					$twitter_status = new SimpleXMLElement($xml);
-					$i = 0;
-					foreach ($twitter_status->status as $status) {
-						if ($i < 10) {
-							if ($i == 0) {echo "\t\t\t\t";} else {echo "\n\t\t\t\t";}
-							echo '<p>';
-							$tweet = toLink($status->text);
-							echo $tweet;
-							echo '<br />';
-							echo "\n\t\t\t\t";
-							$date = preg_split("/[\s,:]+/",$status->created_at);
-							echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
-							$i++;
+						// fetch user's timeline in xml format
+						$xml = $twitter->getUserTimeline();
+						$twitter_status = new SimpleXMLElement($xml);
+						$i = 0;
+						foreach ($twitter_status->status as $status) {
+							if ($i < 10) {
+								if ($i == 0) {echo "\t\t\t\t";} else {echo "\n\t\t\t\t";}
+								echo '<p>';
+								$tweet = toLink($status->text);
+								echo $tweet;
+								echo '<br />';
+								echo "\n\t\t\t\t";
+								$date = preg_split("/[\s,:]+/",$status->created_at);
+								echo '<em>'.$date[1].' '.(0+$date[2]).', '.$date[3].':'.$date[4].'</em></p>';
+								$i++;
+							}
 						}
+					} catch (Exception $e) {
+						die('ERROR: ' . $e->getMessage());
 					}
 					echo "\n";
 				?>
