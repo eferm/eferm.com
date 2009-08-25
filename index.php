@@ -3,7 +3,8 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="verify-v1" content="i6rrLdy1I329TPHCZy/LvX2W4n6GGVWdR5D9bzDIZcM=" />
-		<meta name="verify-v1" content="I+T8GpAAGkUkrGecM4cvTOHQ18/nUsGMm8v6qAtH5BI=" />
+		<link rel="openid.server" href="http://www.myopenid.com/server" />
+		<link rel="openid.delegate" href="http://eferm.myopenid.com/" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link type="text/css" href="eferm.css" rel="stylesheet" media="screen" />
 		<title>Emanuel Ferm</title>
