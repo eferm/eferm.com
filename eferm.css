@@ -24,6 +24,7 @@ html, body {
 
 #header, #content, #footer {
 	width: 700px;
+	height: 100%;
 	padding-left: 160px;
 	padding-right: 160px;
 }
