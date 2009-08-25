@@ -2,9 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<!-- Google Webmaster Tools for eferm.com -->
 		<meta name="verify-v1" content="i6rrLdy1I329TPHCZy/LvX2W4n6GGVWdR5D9bzDIZcM=" />
+		
+		<!-- OpenID 2.0 delegate information -->
+		<link rel="openid2.provider" href="http://www.myopenid.com/server" />
+        <link rel="openid2.local_id" href="http://eferm.myopenid.com/" />
+		
+		<!-- OpenID 1.1 delegate information -->
 		<link rel="openid.server" href="http://www.myopenid.com/server" />
 		<link rel="openid.delegate" href="http://eferm.myopenid.com/" />
+		
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link type="text/css" href="eferm.css" rel="stylesheet" media="screen" />
 		<title>Emanuel Ferm</title>
